@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+}
+
+.background {
+    background: rgb(92,73,99);
+    background: linear-gradient(152deg, rgba(92,73,99,1) 3%, rgba(105,28,138,1) 23%, rgba(31,115,179,1) 68%, rgba(22,139,198,1) 99%);
+}
+
+.center {
+    text-align: center;
+}
+
+.container-half {
+    width:40%;
+    margin: auto;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+
+/* Nav Styling */
+
+.navbar {
+    overflow:hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar a {
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    display: block;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    margin: auto;
+    color:#fff;
+    font-size: large;
+    text-shadow: 2px 5px 20px solid black; /* Fix this */
+    padding: 16px 20px;
+}
+
+@media screen and (max-width: 576px) {
+    .Navbar a{
+        width: 25%; /* This makes each link take up 1/4 of the navbar */
+        font-size: 12px;
+    }
+}
+
+/* Underline text with animated hover effect */
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #8134a5d8;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #8134a5d8;
+  transform-origin: bottom right;
+  transition: transform 0.10s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Card Styling */
+
+.card, .opacity {
+    
+    opacity: 0.75;
+    background-color: rgb(38, 28, 46);
+    
+}
+
+/*
+#col1 {
+    margin-left: 1em;
+}
+*/
+
+h1 {
+    animation: text-shadow 1s ease-in;
+
+}
+
+.bolded {
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form Styling */
+
+input[type=submit] {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+    margin-top: 2em;
+    border-radius: 8px;
+    font-size: large;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.85;
+}
