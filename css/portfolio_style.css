@@ -1,5 +1,10 @@
 body {
     margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .background {
@@ -11,8 +16,6 @@ body {
     text-align: center;
     color: #fff;
 }
-
-
 
 .container-half {
     width:40%;
@@ -29,6 +32,8 @@ body {
 
 }
 
+/*Styling for bar under intro*/
+
 hr {
     width: 100%;
     align-items: center;
@@ -40,11 +45,12 @@ hr {
 /* Nav Styling */
 
 .navbar {
-    overflow:hidden;
+    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
+    
 }
 
 .navbar a {
@@ -54,19 +60,22 @@ hr {
     display: block;
     font-weight: 800;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: relative;
-    margin: auto;
     color:#fff;
     font-size: large;
     text-shadow: 2px 5px 20px solid black; /* Fix this */
     padding: 16px 20px;
+    
+}
+
+.navbar-right {
+    float: inline-end;
 }
 
 /* Small Screen Compatibility Styling */
 
 @media screen and (max-width: 576px) {
     .Navbar a{
-        width: 25%; /* This makes each link take up 1/4 of the navbar */
+        width: 33%; /* This makes each link take up 1/4 of the navbar */
         font-size: 12px;
     }
 
@@ -105,9 +114,15 @@ hr {
 
 .card, .opacity {
     
-    opacity: 0.75;
-    
-    
+    opacity: 0.78;
+}
+
+img {
+    height: auto;
+    width: auto;
+    max-width: 38rem;
+    max-height: 24rem;
+    margin: auto;
 }
 
 /*
@@ -150,6 +165,10 @@ input[type=submit]:hover {
 }
 .card-body {
     color: #fff;
+}
+
+.form_control {
+    color:#fff;
 }
 /*
 #Info {

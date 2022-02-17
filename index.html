@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- Title and Stylesheet Link -->
-    <title>David Alexander Web Development</title>
+    <title>David Alexander Web Design</title>
     <link rel="stylesheet" type="text/css" href="./css/portfolio_style.css">
     
     <!-- Bootstrap CSS -->
@@ -23,15 +23,17 @@
     
     
     <!-- Navbar -->
-    <div class="navbar center">
-        <a class="hover-underline-animation" href="#Links">My Links</a>
-        <a class="hover-underline-animation" href="#Info">Info</a>
-        <a class="hover-underline-animation" href="#Contact">Contact Me</a>
+    <div class="navbar">
+        <a class="hover-underline-animation" href="#Links">My Links/Info</a>
+        <div class="navbar-right">
+            <a class="hover-underline-animation navbar-right" href="#Contact">Contact Me</a>
+        </div>
+        
     </div>
     
     
     <!-- Jumbotron Area -->
-    <div id="Home">
+    <div>
 
         <div class=" p-4 rounded-lg m-4">
             <h1 class="display-3 center">Hey, I'm David. Welcome to my portfolio.</h1>
@@ -55,15 +57,15 @@
 
     <br><br> <!-- Spacing -->
     
-    <div class="container">
+    <div class="container" id="Links">
         <div class="row row-cols-1 row-cols-md-2 g-5">
-            <div class="col" id="Links">
-                <div class="card">
+            <div class="col">
+                <div class="card bg-dark">
                     
                     <div class="card-body">
                         <h5 class="card-title">My GitHub</h5>
-                        <p class="card-text">This includes my school projects (so far) and some personal projects I'm tackling in my spare time. Check it out to see
-                        more examples of my work and documentation.</p>
+                        <p class="card-text">This includes my school projects (so far) and some personal projects I'm tackling in my spare time. I attended Queen's University for Computer Science and later the Academy of Learning Online's Web Developer program. Check it out to see
+                        more examples of my work,styling, and documentation.</p>
                     </div>
                     <div class="card-footer mx-auto">
                         <a href="https://github.com/LastEdgar" class="btn btn-info" target="_blank">Github</a>
@@ -72,11 +74,11 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card bg-dark">
                     
                     <div class="card-body">
                         <h5 class="card-title">My LinkedIn</h5>
-                        <p class="card-text">I'm new to LinkedIn but feel free to connect or access my resume here for future opportunities.</p>
+                        <p class="card-text">I'm new to LinkedIn but feel free to connect or access my resume here for future opportunities. I've previously worked in IT and information security, trades, and have a good background with networking. For interests sake I'm taking Google's course series on UX Design.</p>
                     </div>
                     <div class="card-footer mx-auto">
                         <a href="https://www.linkedin.com/in/david-edgar-495882228/" class="btn btn-info" target="_blank">LinkedIn</a>
@@ -87,32 +89,32 @@
 
     <!-- Info/About Me Section -->
 
-            <div class="col" id="Info">
-                <div class="card h-100">
+            <div class="col">
+                <div class="card h-100 bg-dark">
                     
                     <div class="card-body">
                         <h5 class="card-title">Personal Life</h5>
-                        <p class="card-text">I'm passionate about animals and recently accepted a foster dog named Howie into my home! I enjoy being active through weight
+                        <p class="card-text">I'm passionate about animals and recently welcomed a foster dog named Howie into our family! He's a rescue from Mexico and just starting to get used to the cold. I enjoy staying active through weight
                         training, bouldering, skating, and swimming. I like to explore Canada and drove across the country this past summer for
                         a move out east.</p>
                     </div>
-                    <div class="card-footer">
-                        <img src="" class="card-img-bottom" alt="">
+                    <div class="card-footer h-80">
+                        <img src="./Img/HowieComfy.jpg" class="card-img-bottom" alt="" width="100" height="50">
                     </div> 
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100 bg-dark">
                     
                     <div class="card-body">
                         <h5 class="card-title">Volunteer Work</h5>
-                        <p class="card-text">In my free time I serve as a board member of the Guelph Enabling Garden, a non-profit community garden specializing in
-                        horticultural therapy and disability outreach. I've previously volunteered as a sound technician and performer for
-                        community concerts, and volunteered at a dog pool for swim therapy. I'm happy to talk about any of those programs, just
+                        <p class="card-text">In my free time I serve as a board member of the <a href="http://www.enablinggarden.org/" target="_blank">Guelph Enabling Garden</a>, a non-profit community garden specializing in
+                        horticultural therapy and disability outreach. I'm currently working on a fundraising campaign to supplement reduced grant funding this year. I've previously volunteered as a sound technician and performer for
+                        community concerts, and at a dog pool for swim therapy. I'm happy to talk about any of those programs, just
                         shoot me a message.</p>
                     </div>
                     <div class="card-footer">
-                        <img src="" class="card-img-bottom" alt="">
+                        <img src="./Img/GEG 2021 Logo Full - Transparent Bkg.png" class="card-img-bottom" alt="GEG Logo">
                     </div>
                 </div>
             </div>
@@ -129,18 +131,18 @@
                 <h2 class="center bolded">Contact Me</h2><br>
                 <form action="https://formspree.io/f/xqknqzlv" method="POST">
                     <div class="form-floating mb-3 opacity">
-                        <input type="text" name="Name" class="form-control" id="floatingInput" placeholder="">
-                        <label for="floatingInput">Name</label>
+                        <input type="text" name="Name" class="form-control bg-dark" id="floatingInput" placeholder="">
+                        <label for="floatingInput" class="text-light">Name</label>
                     </div>
                     
                     <div class="form-floating mb-3 opacity">
-                        <input type="email" name="Email" class="form-control" id="floatingInput" placeholder="">
-                        <label for="floatingInput">Email address</label>
+                        <input type="email" name="Email" class="form-control  bg-dark" id="floatingInput" placeholder="">
+                        <label for="floatingInput" class="text-light">Email address</label>
                     </div>
                         
                     <div class="form-floating opacity">
-                        <textarea class="form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                        <label for="floatingTextarea">Message</label>   
+                        <textarea class="form-control  bg-dark" name="message" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea" class="text-light">Message</label>   
                     </div>
                         <input type="submit"value="Submit"> 
                 </form>
