@@ -1,3 +1,5 @@
+/* Body and Container Stylings */
+
 body {
     margin: 0;
     padding: 0;
@@ -30,6 +32,16 @@ body {
     padding-bottom: 1rem;
     padding-top: 0rem;
 
+}
+
+h1 {
+    animation: text-shadow 1s ease-in;
+
+}
+
+.bolded {
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*Styling for bar under intro*/
@@ -125,20 +137,8 @@ img {
     margin: auto;
 }
 
-/*
-#col1 {
-    margin-left: 1em;
-}
-*/
-
-h1 {
-    animation: text-shadow 1s ease-in;
-
-}
-
-.bolded {
-    font-weight: 700;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.card-body {
+    color: #fff;
 }
 
 /* Form Styling */
@@ -163,18 +163,7 @@ input[type=submit]:hover {
     opacity: 1;
     font-weight: 600;
 }
-.card-body {
-    color: #fff;
-}
 
 .form_control {
     color:#fff;
-}
-/*
-#Info {
-    display: block;
-}
-
-.row {
-
 }
