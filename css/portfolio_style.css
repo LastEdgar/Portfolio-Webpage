@@ -9,13 +9,32 @@ body {
 
 .center {
     text-align: center;
+    color: #fff;
 }
+
+
 
 .container-half {
     width:40%;
     margin: auto;
-    padding-top: 4em;
+    padding-top: 8em;
     padding-bottom: 2em;
+}
+
+.container-line {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 1rem;
+    padding-top: 0rem;
+
+}
+
+hr {
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    display: block;
+   
 }
 
 /* Nav Styling */
@@ -43,10 +62,16 @@ body {
     padding: 16px 20px;
 }
 
+/* Small Screen Compatibility Styling */
+
 @media screen and (max-width: 576px) {
     .Navbar a{
         width: 25%; /* This makes each link take up 1/4 of the navbar */
         font-size: 12px;
+    }
+
+    .container-half {
+        width: 80%;
     }
 }
 
@@ -81,7 +106,7 @@ body {
 .card, .opacity {
     
     opacity: 0.75;
-    background-color: rgb(38, 28, 46);
+    
     
 }
 
@@ -113,4 +138,24 @@ input[type=submit] {
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     opacity: 0.85;
+    color: #fff;
+    background-color: rgb(26, 29, 32);
+}
+
+
+input[type=submit]:hover {
+    border-color: #fff;
+    opacity: 1;
+    font-weight: 600;
+}
+.card-body {
+    color: #fff;
+}
+/*
+#Info {
+    display: block;
+}
+
+.row {
+
 }

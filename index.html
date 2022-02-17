@@ -24,8 +24,7 @@
     
     <!-- Navbar -->
     <div class="navbar center">
-        <a class="hover-underline-animation" href="#Home">Home</a>
-        <a class="hover-underline-animation" href="#Links">Links</a>
+        <a class="hover-underline-animation" href="#Links">My Links</a>
         <a class="hover-underline-animation" href="#Info">Info</a>
         <a class="hover-underline-animation" href="#Contact">Contact Me</a>
     </div>
@@ -34,9 +33,13 @@
     <!-- Jumbotron Area -->
     <div id="Home">
 
-        <div class=" p-4 rounded-lg m-3">
-            <h1 class="display-4 center">Hey, I'm David. Welcome to my portfolio.</h1>
-            <br><hr class="my-4">
+        <div class=" p-4 rounded-lg m-4">
+            <h1 class="display-3 center">Hey, I'm David. Welcome to my portfolio.</h1>
+            <br> <!-- Spacing -->
+            <div class="container-line">
+                <hr class="my-5">
+            </div>    
+            <br> <!-- Spacing -->
             <p class="lead center">I'm a front-end web developer, eager to take on new projects. If you'd like to work together,
                 please reach out using the form below :)</p>
             <p class="center">I excel at making your website accessible, modern, and attractive to your audience. <br>
@@ -50,74 +53,96 @@
 
     <!-- Links/Github Section -->
 
-    <div class="container" id="Links">
+    <br><br> <!-- Spacing -->
+    
+    <div class="container">
         <div class="row row-cols-1 row-cols-md-2 g-5">
-            <div class="col" id="col1">
-                <div class="card h-100">
+            <div class="col" id="Links">
+                <div class="card">
                     
                     <div class="card-body">
                         <h5 class="card-title">My GitHub</h5>
-                        <p class="card-text">This includes my school projects (so far) and some personal projects I'm tackling in my spare time. Check it out!</p>
+                        <p class="card-text">This includes my school projects (so far) and some personal projects I'm tackling in my spare time. Check it out to see
+                        more examples of my work and documentation.</p>
+                    </div>
+                    <div class="card-footer mx-auto">
+                        <a href="https://github.com/LastEdgar" class="btn btn-info" target="_blank">Github</a>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">My LinkedIn</h5>
+                        <p class="card-text">I'm new to LinkedIn but feel free to connect or access my resume here for future opportunities.</p>
+                    </div>
+                    <div class="card-footer mx-auto">
+                        <a href="https://www.linkedin.com/in/david-edgar-495882228/" class="btn btn-info" target="_blank">LinkedIn</a>
+                    
+                    </div>
+                </div>
+            </div>
+
+    <!-- Info/About Me Section -->
+
+            <div class="col" id="Info">
+                <div class="card h-100">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Personal Life</h5>
+                        <p class="card-text">I'm passionate about animals and recently accepted a foster dog named Howie into my home! I enjoy being active through weight
+                        training, bouldering, skating, and swimming. I like to explore Canada and drove across the country this past summer for
+                        a move out east.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="https://github.com/LastEdgar" class="btn btn-info" target="blank">Github</a>
-
-                    </div>
-                    <img src="..." class="card-img-top" alt="...">
+                        <img src="" class="card-img-bottom" alt="">
+                    </div> 
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
                     
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a short card.</p>
+                        <h5 class="card-title">Volunteer Work</h5>
+                        <p class="card-text">In my free time I serve as a board member of the Guelph Enabling Garden, a non-profit community garden specializing in
+                        horticultural therapy and disability outreach. I've previously volunteered as a sound technician and performer for
+                        community concerts, and volunteered at a dog pool for swim therapy. I'm happy to talk about any of those programs, just
+                        shoot me a message.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="" class="btn btn-info" target="blank">Resume (Download)</a>
-                    
+                        <img src="" class="card-img-bottom" alt="">
                     </div>
-                    
-                    <img src="..." class="card-img-top" alt="...">
                 </div>
             </div>
-            
         </div>
-
-
-    </div>
-
-    <!-- Info/About Me Section -->
-    
-    <div class="" id="Info">
-        
-    
-    
     </div>
 
 
     <!-- Contact Section -->
+    
     <div class="container-half">
         <section id="Contact">
             <!-- Contact Form -->
             <div>
-                <h2 class="center bolded">Contact Me</h2>
-                <form action="" method="POST">
+                <h2 class="center bolded">Contact Me</h2><br>
+                <form action="https://formspree.io/f/xqknqzlv" method="POST">
                     <div class="form-floating mb-3 opacity">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="">
+                        <input type="text" name="Name" class="form-control" id="floatingInput" placeholder="">
                         <label for="floatingInput">Name</label>
                     </div>
                     
                     <div class="form-floating mb-3 opacity">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="">
+                        <input type="email" name="Email" class="form-control" id="floatingInput" placeholder="">
                         <label for="floatingInput">Email address</label>
                     </div>
                         
                     <div class="form-floating opacity">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <textarea class="form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                         <label for="floatingTextarea">Message</label>   
                     </div>
-                        <input type="submit" value="Submit"> 
+                        <input type="submit"value="Submit"> 
                 </form>
 
             </div>
@@ -130,7 +155,7 @@
     <!-- Footer Section -->
     <footer>
         <p>
-            <p class="center">Misc Copyright 2022</p> 
+            <p class="center">&copy;David Alexander Web Design 2022</p> 
         </p>
     </footer>
 
