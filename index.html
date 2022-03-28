@@ -7,8 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- Title and Stylesheet Link -->
-    <title>David Alexander Web Design</title>
+    <title>David Edgar Web Design</title>
     <link rel="stylesheet" type="text/css" href="./css/portfolio_style.css">
+    <script src= "JS/main.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    
+    
     
     <!-- Bootstrap CSS Sheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -19,6 +24,9 @@
 
 
 <body class="background">
+    <script>
+        document.body.classList.add('fade');
+    </script>
 
     
     
@@ -34,18 +42,18 @@
     
     <!-- Jumbotron Area -->
     <div>
-
         <div class=" p-4 rounded-lg m-4">
-            <h1 class="display-3 center">Hey, I'm David. Welcome to my portfolio.</h1>
+            <h1 class="display-3 center">David Edgar, Ontario-based Web and UX Designer</h1>
+            
             <br> <!-- Spacing -->
             <div class="container-line">
                 <hr class="my-5 bg-light">
             </div>    
             <br> <!-- Spacing -->
             <p class="lead center">I'm a front-end web developer, eager to take on new projects. If you'd like to work together,
-                please reach out using the form below :)</p>
+                please <a href=#Contact>contact</a> me.</p>
             <p class="center">I excel at making your website accessible, modern, and attractive to your audience. <br>
-                This page is hand-built using HTML5, CSS, and some Bootstrap 5.</p>
+                This page is hand-built using HTML5, CSS, Javascript and some Bootstrap 5.</p>
             
         </div>
 
@@ -123,40 +131,51 @@
 
 
     <!-- Contact Section -->
-    
-    <div class="container-half">
-        <section id="Contact">
-            <!-- Contact Form -->
-            <div>
-                <h2 class="center bolded">Contact Me</h2><br>
-                <form action="https://formspree.io/f/xqknqzlv" method="POST">
-                    <div class="form-floating mb-3 opacity">
-                        <input type="text" name="Name" class="form-control bg-dark" id="floatingInput" placeholder="">
-                        <label for="floatingInput" class="text-light">Name</label>
-                    </div>
-                    
-                    <div class="form-floating mb-3 opacity">
-                        <input type="email" name="Email" class="form-control  bg-dark" id="floatingInput2" placeholder="">
-                        <label for="floatingInput" class="text-light">Email address</label>
-                    </div>
+    <div class="container-full">
+        <div class="container-half">
+            <section id="Contact">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="center bolded">Contact Me</h2><br>
+                    <form action="https://formspree.io/f/xqknqzlv" method="POST">
+                        <div class="form-floating mb-3 opacity">
+                            <input type="text" name="Name" class="form-control bg-dark" id="floatingInput" placeholder="" required>
+                            <label for="floatingInput" class="text-light">Name</label>
+                        </div>
                         
-                    <div class="form-floating opacity">
-                        <textarea class="form-control  bg-dark" name="message" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                        <label for="floatingTextarea" class="text-light">Message</label>   
-                    </div>
-                        <input type="submit" value="Submit"> 
-                </form>
+                        <div class="form-floating mb-3 opacity">
+                            <input type="email" name="Email" class="form-control  bg-dark" id="floatingInput2" placeholder="" required>
+                            <label for="floatingInput" class="text-light">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3 opacity">
+                            <input type="phone" name="phone" class="form-control  bg-dark" id="floatingInput3" placeholder="" required>
+                            <label for="floatingInput" class="text-light">Phone Number</label>
+                        </div>
+                            
+                        <div class="form-floating opacity">
+                            <textarea class="form-control  bg-dark" name="message" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea" class="text-light">Message</label>   
+                        </div>
+                            <input type="submit" value="Submit"> 
+                    </form>
 
-            </div>
+                </div>
 
-        </section>
+            </section>
+        </div>
+        <div class="container-half">
+            <section id="Contact-Info">
+
+            </section>
+
+        </div>
     </div>
     
 
 
     <!-- Footer Section -->
     <footer>
-            <p class="center">&copy;David Alexander Web Design 2022</p>   
+            <p class="center">&copy;David Edgar Web Design 2022</p>   
     </footer>
 
 

@@ -1,4 +1,8 @@
 /* Body and Container Stylings */
+html {
+    scroll-behavior: smooth;
+    margin: 0px;
+}
 
 body {
     margin: 0;
@@ -6,7 +10,14 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    opacity: 1;
+    transition: 1s opacity;
 
+}
+
+body.fade {
+    opacity: 0;
+    transition: none;
 }
 
 .background {
@@ -18,7 +29,10 @@ body {
     text-align: center;
     color: #fff;
 }
-
+.container-full {
+    width: 100%;
+    margin: auto;
+}
 .container-half {
     width:40%;
     margin: auto;
@@ -34,16 +48,16 @@ body {
 
 }
 
-h1 {
-    animation: text-shadow 1s ease-in;
-
-}
-
 .bolded {
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+a:link, a:visited {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+}
 /*Styling for bar under intro*/
 
 hr {
